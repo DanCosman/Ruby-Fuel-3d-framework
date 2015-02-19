@@ -7,4 +7,4 @@ Feature: This is a simple checkout
     Then I want to buy the SCANIFY Scanner Targets
     And I proceed to the Checkout Page
     And I fill in my details
-    Then I place the order
+    Then The order should be placed

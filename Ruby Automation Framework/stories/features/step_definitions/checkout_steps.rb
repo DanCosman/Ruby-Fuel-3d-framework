@@ -18,6 +18,6 @@ And(/^I fill in my details$/) do
   (on CheckoutPage).complete_billing_details
 end
 
-Then(/^I place the order$/) do
-  sleep 5
+Then(/^The order should be placed$/) do
+  (on CheckoutPage).wait_until(5) {browser.text.include?("Order Placed").should be_true}
 end

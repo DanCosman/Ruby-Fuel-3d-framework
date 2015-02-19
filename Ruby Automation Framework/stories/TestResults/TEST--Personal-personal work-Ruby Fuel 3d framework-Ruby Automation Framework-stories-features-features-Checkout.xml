@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" name="This is a simple checkout" skipped="0" tests="1" time="35.250067">
-<testcase classname="This is a simple checkout" name="Checkout" time="35.250067">
+<testsuite errors="0" failures="1" name="This is a simple checkout" skipped="0" tests="1" time="37.518586">
+<testcase classname="This is a simple checkout" name="Checkout" time="37.518586">
+  <failure message="failed Checkout" type="failed">
+    <![CDATA[Scenario: Checkout
+
+Given I access the homepage
+And I navigate to the shop page
+Then I want to buy the SCANIFY Scanner Targets
+And I proceed to the Checkout Page
+And I fill in my details
+Then The order should be placed
+
+Message:
+]]>
+    <![CDATA[expected: true value
+     got: false (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/checkout_steps.rb:22:in `block (2 levels) in <top (required)>'
+./features/step_definitions/checkout_steps.rb:22:in `/^The order should be placed$/'
+D:\Personal\personal work\Ruby Fuel 3d framework\Ruby Automation Framework\stories\features\features\Checkout.feature:10:in `Then The order should be placed']]>
+  </failure>
   <system-out/>
   <system-err/>
 </testcase>
