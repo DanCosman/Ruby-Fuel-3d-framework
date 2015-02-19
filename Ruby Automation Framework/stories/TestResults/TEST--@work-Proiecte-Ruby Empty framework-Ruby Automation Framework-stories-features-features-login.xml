@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="login Feature" skipped="0" tests="3" time="13.175194">
+<testcase classname="login Feature" name="Login test" time="10.334523">
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="login Feature" name="Login with a team lead user" time="1.380911">
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="login Feature" name="Login with a department lead user" time="1.459760">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

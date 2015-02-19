@@ -1,0 +1,31 @@
+# Access to the data in this file is provided through EnvConfig - see env_config.rb
+
+defaults: &execution_defaults
+  default_config: ci #This just ensures the ft profile (below) is loaded if no CONFIG= is passed from the command line.
+  dashboard_path: /
+  shop_path: /shop/
+  scanner_targets_path: /product/scanner-targets/
+  cart_path: /cart/
+  checkout_page_path: /checkout/
+
+
+ci:
+  <<: *execution_defaults
+  base_url: fuel-3d.com
+
+
+ft:
+  <<: *execution_defaults
+  base_url:
+
+uat:
+  <<: *execution_defaults
+
+rc:
+  <<: *execution_defaults
+  base_url:
+
+
+
+
+

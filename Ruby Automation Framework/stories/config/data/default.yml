@@ -1,0 +1,19 @@
+loginpage:
+  username: cciocan
+  password: Passw0rd.123
+
+
+billing_details:
+#  country_select: United Kingdom (UK)
+  first_name_field: First Name
+  last_name_field: Last Name
+  address_field: Address
+  city_field: City
+  postcode_field: 111111
+  email_field: email@email.test
+  phone_field: 1234567890
+  password_field: Password
+  credit_field: 411111111111111
+  expiry_field: 02/20
+  card_code_field: 4444
+  terms_checkbox: set

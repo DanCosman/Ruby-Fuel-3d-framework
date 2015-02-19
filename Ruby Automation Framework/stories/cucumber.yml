@@ -1,0 +1,9 @@
+
+
+default: -f pretty --format junit --out=TestResults --format html --out TestResults/HTMLReports/html_report_user1.html --format json --out TestResults/JsonReports/json_report.json -t ~@manual -t ~@wip -t ~@not_started -t ~@failing <%= "-t " + ENV['TAGS'] unless ENV['TAGS'].nil? %>
+all: -f pretty <%= "-t " + ENV['TAGS'] unless ENV['TAGS'].nil? %>
+complete_no_failing: -f pretty ru-t ~@failing -t ~@wip -t ~@not_started <%= "-t " + ENV['TAGS'] unless ENV['TAGS'].nil? %>
+failing: -f pretty -t @failing -t ~@wip -t ~@not_started <%= "-t " + ENV['TAGS'] unless ENV['TAGS'].nil? %>
+
+
+#a1: --no-source --color --format pretty --format html --out results\reports\scenario1a\html\html_report_user1.html --tags @a

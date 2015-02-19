@@ -1,0 +1,4 @@
+Attribute Value	Attribute Description	Status
+aval1	BC1	ON
+aval2	BC2	OFF
+aval3	BC3	ON
